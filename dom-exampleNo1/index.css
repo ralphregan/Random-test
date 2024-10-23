@@ -4,5 +4,6 @@ li {
 li button{
     font-size: 12px;
     margin-left: 20px;
-    color: aqua;
+    color: rgb(200, 255, 0);
+    background-color: brown;
 }

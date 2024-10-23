@@ -1,29 +1,40 @@
-const UL = document.querySelector("ul");
-const Input = document.querySelector("input");
-const button = document.querySelector("#btn-add");
+const listEle = document.querySelector("ul");
+const input = document.querySelector("input");
+const addButton = document.querySelector("button");
 
+addButton.setAttribute("id", "btn-add");
+const focusnext = function (){
+        input.focus();
+    }
+window.addEventListener("load", focusnext);
 
-const clicked =   function(){
-    const myList = Input.value;
-    const list = document.createElement("li");
-    const span = document.createElement("span");
+let buttonClicked = function(){
+    let newInputValue = input.value;
+    input.value = "";
+
+    const listIten = document.createElement("li");
+    const listContent = document.createElement("span");
     const listButton = document.createElement("button");
 
-    Input.value = " ";
-    listButton.textContent = 'Delete';
+    listIten.appendChild(listContent);
+    listIten.appendChild(listButton);
+
+    listContent.textContent = newInputValue;
+    listButton.textContent = "Delete";
+
+    listEle.appendChild(listIten);
     
-list.appendChild(span);
-list.appendChild(listButton);
-span.textContent= myList;
-UL.appendChild(list);
-const remove = function(){
-    UL.removeChild(list);
+    const remove = function(){
+        listEle.removeChild(listIten);
+    }
 
-};
-listButton.addEventListener("click",remove);
-
+    listButton.addEventListener("click", remove);
+    
+    
 
 }
 
- 
-button.addEventListener("click", clicked)
+addButton.addEventListener("click", buttonClicked);
+addButton.addEventListener("click", focusnext);
+
+
