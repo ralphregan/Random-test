@@ -1,0 +1,18 @@
+h1{
+    font-size: 4rem;
+    color: aqua;
+    font-style: italic;
+    text-align: center;
+
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+button{
+    box-shadow: 2px;
+    border: solid 1px aqua ;
+}
