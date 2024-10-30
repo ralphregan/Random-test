@@ -1,0 +1,36 @@
+body{
+   
+}
+
+.Btn{
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.cell{
+    border: solid 1px red;
+   
+}
+.row{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+   
+}
+.theBox{
+    border: solid 1px yellow;
+    display: flex;
+    justify-content: space-evenly;
+    width: 960px;
+    height: 960px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+
+
+    
+}
