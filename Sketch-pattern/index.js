@@ -1,6 +1,8 @@
 const Create = document.createElement("button");
 Create.textContent ="Size";
 Create.className = "Btn";
+const Create2 = document.createElement("button");
+Create2.textContent="color"
 
 const theBox = document.querySelector(".theBox");
 
@@ -34,17 +36,17 @@ Cell.forEach(one => {
         let colorIndex = 0;
 
     one.addEventListener("mouseover", ()=>{
-        setTimeout(()=>{
+        /*setTimeout(()=>{
         one.style.backgroundColor = colowave[colorIndex]
         colorIndex = (colorIndex + 1) % colowave.length;
 
-},1000)
+},1000)*/
 
-/*setInterval(()=>{
+setInterval(()=>{
     one.style.backgroundColor = colowave[colorIndex]
     colorIndex = (colorIndex + 1) % colowave.length;
 
-},1000)*/
+},1000)
    
 })
 
